@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<script src="http://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous">
+</script>
+
+<script type="text/javascript" src="assets/Javascript/game.js"></script>
+	<title></title>
+	
+</head>
+<body>
+<div class="container">
+	<div class="row ">
+		<img class="col-md-3 char img-circle " id="yoda" src="assets/images/yoda.jpg" >
+		<img class="col-md-3 char img-circle " id="kit" src="assets/images/Kit1.jpg"  >
+		<img class="col-md-3 char img-circle " id="sith" src="assets/images/Sith.jpg">
+		<img class="col-md-3 char img-circle " id="storm" src="assets/images/Storm_Troopers.jpg"  >
+	</div>
+<!--  -->
+<div class="container">
+	<div class="row">
+		<h1 class="col-md-12 text-center" id="yourFoe">Who is your foe?</h1>
+		<h1 class="col-md-12 text-center" id="yourChar">Pick your character</h1>
+		<h1 class="col-md-12 text-center" id="yourChar2">Fight!</h1>
+	</div>
+</div>
+
+<div class="container">
+
+	<div class="row">
+		<div class="col-md-2"></div>
+		<div class="col-md-9">
+
+			<div class="row">
+			<img class="col-md-4 char img-circle" id="yodaChoice" src="assets/images/yoda.jpg" >
+			<img class="col-md-4 char img-circle" id="kitChoice" src="assets/images/Kit1.jpg"  >
+			<img class="col-md-4 char img-circle" id="sithChoice" src="assets/images/Sith.jpg">
+			<img class="col-md-4 char img-circle" id="stormChoice" src="assets/images/Storm_Troopers.jpg"  >
+		
+			<img class="col-md-4 char" id="vs" src="assets/images/Vs.png" >
+			<img class="col-md-4 char img-circle" id="yodaChoice2" src="assets/images/yoda.jpg" >
+			<img class="col-md-4 char img-circle" id="kitChoice2" src="assets/images/Kit1.jpg"  >
+			<img class="col-md-4 char img-circle" id="sithChoice2" src="assets/images/Sith.jpg">
+			<img class="col-md-4 char img-circle" id="stormChoice2" src="assets/images/Storm_Troopers.jpg"  >
+			</div>
+			
+			
+			
+	</div>
+</div>
+<div class="container">
+		<div class="row">
+			<div class=" col-md-12 text-center "><button class="btn-danger btn-lg" id="atk">Attack!</button></div>
+		</div>
+		<div class="row text-center cool">
+			<p class=" col-md-3 ">Health: <span id="Hp"></span></p>
+			<p class=" col-md-3 ">Damage Output: <span id="Damage"></span></p>
+			<p class=" col-md-3 ">Enemy Health: <span id="eHp"></span></p>
+			<p class=" col-md-3 ">Enemy Damage Output: <span id="eDamage"></span></p>
+		</div>
+	
+</div>
+</div>
+</body>
+</html>
