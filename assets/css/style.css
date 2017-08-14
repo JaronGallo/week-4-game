@@ -8,8 +8,11 @@
 	
 }
 body {
-	background-image: url(../images/starwars.jpg);
-	background-size: cover;}
+	
+background-repeat: no-repeat;
+
+
+}
 
 .cool {
 	background-color: #DBDFC1;
@@ -20,3 +23,15 @@ body {
 button {
 	margin: 10px;
 }
+
+p {
+	font-size: 1.5em;
+}
+h3 {
+
+	
+text-align: center;
+
+}
+
+

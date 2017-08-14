@@ -1,5 +1,5 @@
 window.onload = function() {
-
+ 
 	var mainChar = false;
 	var faded= false;
 	var secondpickReady= false;
@@ -37,6 +37,7 @@ $("#yoda").click(function(e){
 		return;
 	} else if (secondpickReady===true){
 			$("#yoda").fadeOut(500);
+			$("#yodaText").fadeOut(500);
 			$("#yodaChoice2").fadeIn(1000);
 			$("#yourFoe").fadeOut(1000);
 			$("#yourChar2").fadeIn(1000);
@@ -54,6 +55,7 @@ $("#yoda").click(function(e){
 		secondpickReady=true;
 		mainChar=true;
 		$("#yoda").fadeOut(500);
+		$("#yodaText").fadeOut(500);
 		$("#yourChar").fadeOut(1000);
 		$("#yourFoe").fadeIn(2000);
 		$("#yodaChoice").fadeIn(200);
@@ -76,6 +78,8 @@ $("#sith").click(function(i){
 		return;
 	} else if (secondpickReady===true){
 			$("#sith").fadeOut(500);
+			$("#sithText").fadeOut(500);
+
 			$("#sithChoice2").fadeIn(1000);
 			$("#yourFoe").fadeOut(200);
 			secondpickReady=false;
@@ -87,6 +91,8 @@ $("#sith").click(function(i){
 		secondpickReady=true;
 		mainChar=true;
 		$("#sith").fadeOut(500);
+		$("#sithText").fadeOut(500);
+
 		$("#yourChar").fadeOut(1000);
 		$("#yourFoe").fadeIn(2000);
 		$("#sithChoice").fadeIn(1000);
@@ -108,6 +114,8 @@ $("#storm").click(function(i){
 		return;
 	} else if (secondpickReady===true){
 			$("#storm").fadeOut(500);
+			$("#stormText").fadeOut(500);
+
 			$("#stormChoice2").fadeIn(1000);
 			$("#yourFoe").fadeOut(200);
 			secondpickReady=false;
@@ -119,7 +127,8 @@ $("#storm").click(function(i){
 	} else {
 		secondpickReady=true;
 		mainChar=true;
-		$("#storm").fadeOut(500);
+		$("#storm").fadeOut(500);			
+		$("#stormText").fadeOut(500);
 		$("#yourChar").fadeOut(1000);
 		$("#yourFoe").fadeIn(2000);
 		$("#stormChoice").fadeIn(1000);
@@ -139,6 +148,7 @@ $("#kit").click(function(i){
 		return;
 	} else if (secondpickReady===true){
 			$("#kit").fadeOut(500);
+			$("#kitText").fadeOut(500);
 			$("#kitChoice2").fadeIn(1000);
 			$("#yourFoe").fadeOut(200);
 			$("#yourChar2").fadeIn(1000);
@@ -151,6 +161,7 @@ $("#kit").click(function(i){
 		secondpickReady=true;
 		mainChar=true;
 		$("#kit").fadeOut(500);
+		$("#kitText").fadeOut(500);
 		$("#yourChar").fadeOut(1000);
 		$("#yourFoe").fadeIn(2000);
 		$("#kitChoice").fadeIn(1000);
@@ -224,7 +235,7 @@ $("#Damage").html(mainCharDmg);
 		
 	}else if (health<=0){
 		secondpickReady=false;
-		alert("You lose bitch");
+		alert("You lose");
 
 	} else{}
 
