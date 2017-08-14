@@ -5,13 +5,13 @@ window.onload = function() {
 	var secondpickReady= false;
 
 
-var enemyHp=0;
-var enemyDmg=0;
-var health=0;
-var damage=0;
-var next=false;
-var next2=false;
-var win = false;
+	var enemyHp=0;
+	var enemyDmg=0;
+	var health=0;
+	var damage=0;
+	var next=false;
+	var next2=false;
+	var win = false;
 
 
 	$("#yourFoe").hide();
@@ -190,13 +190,6 @@ $("#eHp").html(enemyHp);
 $("#Hp").html(health);
 $("#Damage").html(mainCharDmg);
 
-
-
-	
-	
-	
-
-	
 	if (enemyHp<=0 && next===false){
 			$("#eHp").html("");
 			$("#eDamage").html("");
@@ -245,55 +238,6 @@ $("#Damage").html(mainCharDmg);
 });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 characterMain();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 };
